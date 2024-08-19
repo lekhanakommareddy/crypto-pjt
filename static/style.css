@@ -1,0 +1,88 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+.form-container {
+  width: 400px; /* Adjust width as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px; /* Add some padding inside the form */
+  
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+  width: 100%; /* Make input fields take up full width within the form */
+  margin-bottom: 10px; /* Add some spacing between input fields */
+}
+
+
+.form-container {
+  /* Existing styles... */
+  display: flex; /* Keep flexbox for horizontal centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Horizontally center within the form */
+  justify-content: center; /* Vertically center within the form container (optional) */
+  min-height: 100vh; /* Optional for consistent vertical centering */
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container button {
+  /* Existing styles... */
+  margin-bottom: 10px; /* Maintain spacing between elements */
+}
+
+.form-control {
+  /* Adjust font size, padding, etc. for desired medium size */
+  font-size: 16px;
+  padding: 0.5rem 1rem;
+}
+.custom-container {
+  width: 70vw;
+}
