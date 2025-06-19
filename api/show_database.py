@@ -1,24 +1,30 @@
 import sqlite3
 
-def show_database():
-    # Connect to the database in the parent directory
+def init_db():
     conn = sqlite3.connect('../users.db')
     cursor = conn.cursor()
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE,
+            password BLOB,
+            private_key BLOB
+        )
+    ''')
+    conn.commit()
+    conn.close()
 
-    # Execute a SELECT query to fetch data
+def show_database():
+    conn = sqlite3.connect('../users.db')
+    cursor = conn.cursor()
     cursor.execute("SELECT * FROM users")
-
-    # Fetch all rows from the query result
     rows = cursor.fetchall()
-
-    # Print the fetched data
     print("Users:")
     for row in rows:
         print(row)
-
-    # Close the cursor and connection
     cursor.close()
     conn.close()
 
 if __name__ == "__main__":
+    init_db()
     show_database()
