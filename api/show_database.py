@@ -1,8 +1,8 @@
 import sqlite3
 
 def show_database():
-    # Connect to the database
-    conn = sqlite3.connect('users.db')
+    # Connect to the database in the parent directory
+    conn = sqlite3.connect('../users.db')
     cursor = conn.cursor()
 
     # Execute a SELECT query to fetch data
