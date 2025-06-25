@@ -2,13 +2,11 @@
 
 The Online Transaction Security Enhancement Using Cryptographic Techniques is a secure approach to handle online transactions by leveraging modern cryptographic methods, including RSA encryption and OTP-based multi-factor authentication. Designed with Python Flask as the backend and SQLite for storage, the application offers a clear, practical example of how cryptography can be integrated into user registration, login, and transaction workflows.
 
----
 
 ## About the Project
 
 In today's digital world, the security of online transactions is paramount. This application showcases how sensitive user data can be encrypted and protected using public-key cryptography (RSA), with an added layer of security through one-time passwords (OTP). The project is suitable as a learning resource, a proof-of-concept, or as a foundational block for production-ready secured web applications.
 
----
 
 ## Key Highlights
 
@@ -18,7 +16,6 @@ In today's digital world, the security of online transactions is paramount. This
 - **Transparent Data Handling:** All cryptographic operations (key generation, password encryption/decryption) are performed using Python's trusted `cryptography` library.
 - **Simple and Portable Storage:** User details and encrypted private keys are stored in a local SQLite database, making it easy to deploy or migrate.
 
----
 
 ## Getting Started
 
@@ -52,7 +49,6 @@ In today's digital world, the security of online transactions is paramount. This
    ```
    The application will be available at [http://127.0.0.1:5000](http://127.0.0.1:5000).
 
----
 
 ## How It Works
 
@@ -62,7 +58,6 @@ In today's digital world, the security of online transactions is paramount. This
 - **User Dashboard:** Only after successful OTP entry does the user gain access to protected resources.
 - **Database Viewing:** Use the included script (`show_database.py`) to inspect user records and their encrypted data for administrative or educational purposes.
 
----
 
 ## Security Considerations
 
@@ -71,7 +66,6 @@ In today's digital world, the security of online transactions is paramount. This
 - **Session Protection:** Sessions are securely managed to prevent unauthorized access or session hijacking.
 - **Extensible Design:** The system is architected to add further cryptographic methods or integrate with other authentication providers as needed.
 
----
 
 ## Contributing
 
